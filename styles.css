@@ -1,0 +1,208 @@
+html {
+  background-color: #53727d;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 12pt;
+}
+
+body {
+  margin: 0 10%;
+  /*dit margin ding doet dus die balk in het midden ipv over de volledige breedte van het scherm */
+}
+
+h1 {
+  font-family: "Croissant One", cursive;
+  font-size: 30pt;
+}
+
+h2 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 24pt;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18pt;
+  color: #451952;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+a:link {
+  color: #ae445a;
+  cursor: pointer;
+}
+
+a:visited {
+  color: #f39f5a;
+}
+
+a:hover {
+  font-size: 13pt;
+}
+
+a:active {
+  color: #451952;
+}
+
+.container {
+  padding: 10px;
+  margin: 40px auto;
+  background-color: white;
+  border: 2px solid #f39f5a;
+  color: #53727d;
+}
+
+/*kleuren*/
+
+.color-container {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.dark-purple {
+  width: 15%;
+  display: inline-block;
+  background-color: #451952;
+}
+
+.aubergine {
+  width: 15%;
+  display: inline-block;
+  background-color: #662549;
+}
+
+.maroon {
+  width: 15%;
+  display: inline-block;
+  background-color: #ae445a;
+}
+
+.orange {
+  width: 15%;
+  display: inline-block;
+  background-color: #f39f5a;
+}
+
+.grey {
+  width: 15%;
+  display: inline-block;
+  background-color: #53727d;
+}
+.dark-purple,
+.aubergine,
+.maroon,
+.orange,
+.grey {
+  margin: 2%;
+}
+
+/*fonts*/
+
+.font-panel {
+  display: inline-block;
+
+  padding: 1%;
+}
+
+.font-croissant {
+  font-family: "Croissant One", cursive;
+}
+
+.font-nanum {
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.croissant,
+.nanum,
+.raleway {
+  font-size: 24pt;
+  color: #662549;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Text styles */
+.style-panel {
+  display: inline-block;
+  padding: 35px;
+}
+
+.heading2 {
+  text-align: left;
+}
+
+.button-panel {
+  display: inline-block;
+
+  padding: 1%;
+}
+
+/*buttons*/
+
+.button-style-1 {
+  background-color: #451952;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.button1 {
+  padding: 20px;
+  color: #451952;
+  background-color: #f39f5a;
+  border: 1px solid #ae445a;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.button1:hover {
+  background-color: #ae445a;
+  color: white;
+  transition-duration: 0.3s;
+}
+.button1:active {
+  background-color: white;
+  color: #ae445a;
+}
+
+.button-style-2 {
+  border: 2px solid #451952;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.button2 {
+  padding: 20px;
+  color: #f39f5a;
+  background-color: #662549;
+  border: 1px solid #ae445a;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button2:hover {
+  background-color: #ae445a;
+  color: white;
+  transition-duration: 0.3s;
+}
+
+.button2:active {
+  background-color: white;
+  color: #ae445a;
+}
