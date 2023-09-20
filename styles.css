@@ -62,31 +62,31 @@ a:active {
 }
 
 .dark-purple {
-  width: 15%;
+  padding: 15px 35px;
   display: inline-block;
   background-color: #451952;
 }
 
 .aubergine {
-  width: 15%;
+  padding: 15px 35px;
   display: inline-block;
   background-color: #662549;
 }
 
 .maroon {
-  width: 15%;
+  padding: 15px 35px;
   display: inline-block;
   background-color: #ae445a;
 }
 
 .orange {
-  width: 15%;
+  padding: 15px 35px;
   display: inline-block;
   background-color: #f39f5a;
 }
 
 .grey {
-  width: 15%;
+  padding: 15px 35px;
   display: inline-block;
   background-color: #53727d;
 }
