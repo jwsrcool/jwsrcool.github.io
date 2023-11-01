@@ -4,167 +4,298 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Design System</title>
+    <title>Portfolio Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Nanum+Myeongjo&family=Raleway&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nanum+Myeongjo&family=Roboto&display=swap");
+    </style>
   </head>
   <body>
-    <h1>Website Design System</h1>
-    <p>Een project voor Codecademy met de volgende requierements:</p>
-    <p>
-      Your style guide/design system will include at least a section on colors,
-      fonts, and specific text styles, but it can be extended to as many other
-      areas as you would like.
-    </p>
-    <div class="container">
-      <h2>Colors</h2>
-      <div class="color-container">
-        <div class="color-panel dark-purple">
-          <p class="color-label">Dark Purple</p>
-          <p class="color-hex">#451952</p>
-        </div>
-        <div class="color-panel aubergine">
-          <p class="color-label">Aubergine</p>
-          <p class="color-hex">#662549</p>
-        </div>
-        <div class="color-panel maroon">
-          <p class="color-label">Maroon</p>
-          <p class="color-hex">#AE445A</p>
-        </div>
-        <div class="color-panel orange">
-          <p class="color-label">Orange</p>
-          <p class="color-hex">#F39F5A</p>
-        </div>
-        <div class="color-panel grey">
-          <p class="color-label">Grey</p>
-          <p class="color-hex">#53727d</p>
-        </div>
-      </div>
-    </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#aboutMe">About Me</a></li>
 
-    <div class="container">
-      <h2>Fonts</h2>
-      <div class="font-panel">
-        <div class="font-croissant">
-          <p class="croissant">Croissant</p>
-          <h3>Regular</h3>
-          <p class="regular">
-            Foxy diva Jennifer Lopez wasn’t baking my quiche.
-          </p>
-          <h3>Cursive</h3>
-          <p class="cursive">
-            Foxy diva Jennifer Lopez wasn’t baking my quiche.
-          </p>
-          <h3>Bold</h3>
-          <p class="bold">Foxy diva Jennifer Lopez wasn’t baking my quiche.</p>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section" id="aboutMe">
+        <div class="hero-section-item" id="top">
+          <img
+            src="img/Black-and-White-Portrait.jpeg"
+            alt="portrait of Vera"
+            class="hero-section-img"
+          />
         </div>
-      </div>
-      <div class="font-panel">
-        <div class="font-nanum">
-          <p class="nanum">Nanum Myeongjo</p>
-          <h3>Regular</h3>
-          <p class="regular">
-            Foxy diva Jennifer Lopez wasn’t baking my quiche.
-          </p>
-          <h3>Cursive</h3>
-          <p class="cursive">
-            Foxy diva Jennifer Lopez wasn’t baking my quiche.
-          </p>
-          <h3>Bold</h3>
-          <p class="bold">Foxy diva Jennifer Lopez wasn’t baking my quiche.</p>
+        <div class="hero-section-item hero-section-name">
+          <h1>VERA</h1>
         </div>
-      </div>
-      <div class="font-panel">
-        <div class="font-raleway">
-          <p class="raleway">Raleway</p>
-          <h3>Regular</h3>
-          <p class="regular">
-            Foxy diva Jennifer Lopez wasn’t baking my quiche.
-          </p>
-          <h3>Cursive</h3>
-          <p class="cursive">
-            Foxy diva Jennifer Lopez wasn’t baking my quiche.
-          </p>
-          <h3>Bold</h3>
-          <p class="bold">Foxy diva Jennifer Lopez wasn’t baking my quiche.</p>
+        <div class="hero-section-item hero-section-colorBlock">
+          <!-- You can add content here if needed -->
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="container">
-      <h2>Text Styles</h2>
-      <div class="style-panel">
-        <div class="heading1">
-          <h1>H1: Main Page Heading</h1>
-          <p>Font-weight: Regular</p>
-          <p>Font-size: 30pt</p>
-          <p>Font-family: Croissant</p>
-        </div>
-      </div>
-      <div class="style-panel">
-        <div class="heading2">
-          <h2>H2: Subheading</h2>
-          <p>Font-weight: Regular</p>
-          <p>Font-size: 24pt</p>
-          <p>Font-family: Nanum Myeongjo</p>
-        </div>
-      </div>
-      <div class="style-panel">
-        <div class="heading3">
-          <h3>H3:Subheading</h3>
-          <p>Font-weight: Bold</p>
-          <p>Font-size: 18pt</p>
-          <p>Font-family: Raleway</p>
-          <p></p>
-        </div>
-      </div>
-      <div class="style-panel">
-        <div class="paragraph">
-          <p>P: Paragraph Text</p>
-          <p>Font-weight: Regular</p>
-          <p>Font-size: 12pt</p>
-          <p>Font-family: Raleway</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <h2>Buttons & Links</h2>
-      <div class="button-panel">
-        <div class="link-style">
-          <h3>Links</h3>
+      <section class="about-me">
+        <h2>About Me</h2>
+        <div class="visible-about-me">
           <p>
-            <a href="#" title="Elke link heeft een tooltip-toelichting"
-              >Een link ziet er zo uit.
-            </a>
-            <p style="font-size: 9pt;"> (Hover en klik ook om de vormgeving van
-              de andere staten te zien)</p>
+            Welcome to my creative corner on the web. I'm Vera, a professional
+            with a unique journey that's taken me from the world of Dutch
+            language and literature to the exciting realms of creative
+            communication.
           </p>
-          <p>Color: #ae445a</p>
-          <p>Hover: font-size to 13pt;</p>
-          <p>Active: #451952</p>
-          <p>Visited: #f39f5a</p>
         </div>
-      </div>
-      <div class="button-panel">
-        <div class="button-style-1">
-          <h3 style="color: #F39F5A;">Button optie 1</h3>
-          <p><a href="#"><button class="button1">Button</button></a> </p>
-          <p>on a dark background</p>
+        <button
+          id="readMoreButton"
+          onclick="viewMore('invisible-about-me','readMoreButton')"
+        >
+          View more
+        </button>
+        <div id="invisible-about-me" style="display: none">
+          <p>
+            My academic roots in Dutch language and literature might seem like
+            an unusual starting point, but it's here that I honed my love for
+            storytelling, language, and the power of effective communication. My
+            career then ventured into the HR landscape, giving me valuable
+            insights into understanding people and their needs.
+          </p>
+
+          <p>
+            However, my heart was set on the world of creativity. I found my
+            passion in crafting visual stories through animation, motion design,
+            illustrations, and video editing. There's something inherently
+            magical in bringing ideas to life through visuals and motion, and I
+            cherish every opportunity to make that magic happen.
+          </p>
+          <p>
+            My creativity knows no bounds. Whether it's creating music,
+            paintings, designing furniture, writing a book, or even crafting a
+            website like this one, the act of creation brings me immense joy.
+            It's this all-encompassing passion for creating that drives me
+            forward in my journey.
+          </p>
+          <p>
+            As I continue to explore the vast landscape of creativity, I've set
+            my sights on a new horizon: to become a full-stack Java developer.
+            The prospect of blending my technical skills with my creative
+            intuition excites me. It's a journey of endless possibilities, where
+            I aim to create unique digital experiences that merge the worlds of
+            technology and imagination.
+          </p>
+          <p>
+            Thank you for joining me on this creative adventure. Let's explore,
+            learn, and create together.
+          </p>
         </div>
-      </div>
-      <div class="button-panel">
-        <div class="button-style-2">
-          <h3>Button optie 2</h3>
-          <p><a href="#"><button class="button2">Button</button></a> </p>
-          <p>on a light background</p>
+      </section>
+      <section id="projects-section">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="projects-animations">
+            <h3>Animations</h3>
+            <p>
+              Animation is a magical realm where creativity knows no bounds.
+              Through the power of motion and visuals, we breathe life into
+              stories, ideas, and concepts, and we also perform a vital role in
+              transforming abstract and complex information into captivating
+              narratives. Each animation project is a canvas for imagination,
+              where we unleash the potential to captivate, educate, and
+              entertain. From character-driven narratives to dynamic explainer
+              videos, animations have the remarkable ability to connect with
+              audiences on a profound level. It's the art of storytelling
+              through movement, and I'm thrilled to share a glimpse of this
+              enchanting world with you.
+            </p>
+            <button
+              id="viewMoreAnimations"
+              onclick="viewMore('invisible-projects-animations', 'viewMoreAnimations')"
+            >
+              View more
+            </button>
+            <div id="invisible-projects-animations">
+              <h4>Animation 1</h4>
+              <a
+                href="https://www.youtube.com/watch?v=tqagEriLNvY"
+                target="”_blank”"
+              >
+                <img
+                  src="img/animation 1.png"
+                  alt="a screenshot of an animation Vera made that links to a video on youtube"
+                />
+              </a>
+              <h4>Animation 2</h4>
+              <a
+                href="https://www.youtube.com/watch?v=jZvV3pqy_ZA"
+                target="”_blank”"
+              >
+                <img
+                  src="img/animation2.jpeg"
+                  alt="a screenshot of an animation Vera made that links to a video on youtube"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="projects-infographics">
+            <h3>Infographics</h3>
+            <p>
+              Information, when presented visually, becomes a powerful
+              storyteller. Infographics are a creative fusion of data, design,
+              and communication, transcending the ordinary to make complex and
+              often mundane information accessible and engaging. These visual
+              gems aren't just about aesthetics; they're about transforming
+              facts and figures into memorable stories. With infographics, I
+              explore the art of simplifying complexity and fostering
+              understanding, translating abstract data into products that help
+              viewers grasp information at a glance. It's in these dynamic
+              graphics that we find the potential to enlighten, persuade, and
+              leave a lasting impact. Join me on a journey through this world of
+              information design.
+            </p>
+            <button
+              id="viewMoreInfographics"
+              onclick="viewMore('invisible-projects-infographics', 'viewMoreInfographics')"
+            >
+              View more
+            </button>
+            <div id="invisible-projects-infographics">
+              <h4>Infographic 1</h4>
+              <img src="img/infographic1.png" alt="an infographic of a..." />
+              <h4>Infographic 2</h4>
+              <img src="img/infographic2.png" alt="an infographic of a..." />
+            </div>
+          </div>
+          <div class="projects-webDevelopment">
+            <h3>Web Development</h3>
+            <p>
+              In the digital age, web development is the alchemy that turns
+              ideas into interactive experiences. While I'm just beginning my
+              journey in this field and have a grasp of the basics, these
+              projects may not yet be considered state of the art. However, I'm
+              eager to share my web development creations, which represent the
+              early steps of my exploration in this dynamic domain. Web
+              development is where innovation and creativity converge, pushing
+              the boundaries of what's possible on the internet. From responsive
+              designs that adapt to any device to dynamic web applications, I'm
+              excited to take you on a tour through the ever-evolving world of
+              web development, where innovation and creativity are the driving
+              forces.
+            </p>
+            <button
+              id="viewMoreWebDevs"
+              onclick="viewMore('invisible-projects-webDevelopment', 'viewMoreWebDevs')"
+            >
+              View more
+            </button>
+            <div id="invisible-projects-webDevelopment">
+              <h4>Webdev project 1</h4>
+              <img src="img/webdev1.jpeg" alt="a screenshot of code" />
+              <h4>Webdev project 2</h4>
+              <img src="img/webdev2.png" alt="a screenshot of code" />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <section id="skills-section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skills-hard"></div>
+          <ul>
+            <li id="frontend">
+              <h4>Front-End development</h4>
+              <p id="skills-hard-frontEndDevelopment-hidden">
+                My foundation in HTML, CSS, and JavaScript allows me to create
+                interactive and visually appealing web content, bringing user
+                interfaces to life.
+              </p>
+            </li>
+            <li>
+              <h4>Adobe Creative Suite</h4>
+              <p id="skills-hard-adobeCreativeSuite-hidden">
+                Proficiency in Adobe After Effects, Illustrator, Premiere Pro,
+                and InDesign empowers me to craft captivating visual experiences
+                and convey ideas effectively through a variety of media.
+              </p>
+            </li>
+            <li>
+              <h4>Scrum Experience</h4>
+              <p id="skills-hard-scrumExperience-hidden">
+                While relatively new to the Scrum framework, my recent exposure
+                has given me insight into agile project management and
+                collaborative development methodologies.
+              </p>
+            </li>
+            <li>
+              <h4>Self-Learning</h4>
+              <p id="skills-hard-selfLearning-hidden">
+                I've cultivated the ability to independently acquire new skills
+                and knowledge by leveraging online resources and tutorials,
+                enabling continuous growth.
+              </p>
+            </li>
+          </ul>
+          <div class="skills-soft">
+            <ul>
+              <li>
+                <h4>Communication</h4>
+                <p id="skills-soft-communication-hidden">
+                  My background in Dutch language and literature, coupled with
+                  proficient English language skills, equips me with strong
+                  written and spoken communication abilities to convey ideas
+                  effectively.
+                </p>
+              </li>
+              <li>
+                <h4>Information Translation</h4>
+                <p id="skills-soft-informationTranslation-hidden">
+                  I possess a unique talent for transforming complex, abstract
+                  data into visually accessible formats, making information more
+                  understandable and engaging.
+                </p>
+              </li>
+              <li>
+                <h4>Independence</h4>
+                <p id="skills-soft-independence-hidden">
+                  I thrive when working independently, offering a self-reliant
+                  approach to tasks and a preference for taking initiative.
+                </p>
+              </li>
+              <li>
+                <h4>Time Management</h4>
+                <p id="skills-soft-timeManagement-hidden">
+                  My proactive time management skills ensure that I consistently
+                  meet project deadlines and maintain open communication when
+                  adjustments are necessary.
+                </p>
+              </li>
+              <li>
+                <h4>Research and Problem-Solving</h4>
+                <p id="skills-soft-research-hidden">
+                  Exceptional research skills combined with an aptitude for
+                  problem-solving have led to a proficiency in efficiently
+                  finding the information I need through expert use of search
+                  engines.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <button class="toTopButton"><a href="#top">Back to top</a></button>
+    <footer id="contact">
+      <h3><a href="contact.html">Contact</a></h3>
+      <p>
+        Feel free to reach out to me with any inquiries, project collaborations,
+        or just to say hello. You can contact me at
+        <a href="mailto:example@example.com">example@example.com</a>. I look
+        forward to connecting with you!
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
