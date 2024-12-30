@@ -88,6 +88,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/vogelbekdier-project",
+            "netlifyToken": "nfp_kRXvcP4JbPwMZUvjZdiiKQxy4PpySv1Lc1f9",
+            "siteId": "56a97448-730c-447c-bae7-09343680697e"
+          }
         }
       }
     }
