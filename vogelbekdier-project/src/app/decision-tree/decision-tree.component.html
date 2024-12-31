@@ -1,0 +1,11 @@
+<div class="tree-wrapper">
+  <app-decision-tree-node
+    *ngFor="let node of nodes$ | async; let first = first; let last = last; let index = index"
+    [node]="node"
+    [isFirstNode]="first"
+    [isLastNode]="last"
+    (onAnswerClicked)="answerNode(index, $event)"
+    (onBackClicked)="resetTillIndex(index)"
+  >
+  </app-decision-tree-node>
+</div>

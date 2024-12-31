@@ -1,0 +1,30 @@
+<div class="node" [class.top-border]="!isFirstNode && node.paths !== null" [style.backgroundImage]="'url(' + node.backgroundImgSrc + ')'">
+  <div *ngIf="isLastNode" class="question-container">
+    <p class="node-content" [innerHTML]="node.content | safeHtml"></p>
+    <ng-container *ngIf="node.inputType === 'images'; else buttons">
+      <div class="image-options">
+        <img
+          *ngFor="let path of node.paths; let first = first"
+          [src]="path.imgSrc"
+          [alt]="path.label"
+          [class.primary-button]="first"
+          [class]="path.customClass"
+          (click)="emitAnswerClicked(path)"
+        />
+      </div>
+    </ng-container>
+
+    <ng-template #buttons>
+      <button
+        *ngFor="let path of node.paths; let first = first"
+        [class.ml-16]="!first"
+        [class.primary-button]="first"
+        [class.secondary-button]="!first"
+        (click)="emitAnswerClicked(path)"
+      >
+        {{ path.label }}
+      </button>
+    </ng-template>
+  </div>
+
+</div>
