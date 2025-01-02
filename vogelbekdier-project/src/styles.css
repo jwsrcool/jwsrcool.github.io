@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "/Users/verawestra/Projects/surprise/vogelbekdier/vogelbekdier/vogelbekdier-project/node_modules/98.css/dist/98.css";
+/*@import "/Users/verawestra/Projects/surprise/vogelbekdier/vogelbekdier/vogelbekdier-project/node_modules/98.css/dist/98.css";*/
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -11,4 +11,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   src: url('assets/fonts/MonkeyIsland-1990-refined.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+button {
+  background-color: black;
+  padding: 1rem;
+  border: 0.1rem solid white;
+  font-family: MonkeyIsland, "Courier New", monospace;
+  font-size: 1rem;
+  color: #00ff00;
+  width: 10rem;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
 }

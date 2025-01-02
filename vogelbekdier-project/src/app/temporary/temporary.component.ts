@@ -17,40 +17,63 @@ export class TemporaryComponent {
     nodes: [
       {
         id: 'A0',
-        content: `Dit is de eerste test vraag.`,
+        content: `
+        Welkom! In dit spel leid je Vogelbekdier de Vries door een existentiële crisis. Kies steeds een van de twee opties. Klik op 'Begin opnieuw' (rechtsbovenin) als je vast zit.
+        <br>
+        Veel plezier!
+        <br>
+        Wil je beginnen met het spel?`,
         paths: [
-          {label: '20 jaar', nextNode: 'A1', imgSrc: '../assets/Images/platypus-cute.jpeg', customClass:'cute-img'},
-          {label: '21 jaar of ouder', nextNode: 'B1', imgSrc: '../assets/Images/platypus-detective.png', customClass:'detective-img'},
+          { label: 'Nee', nextNode: 'A1'},
+          { label: 'Ja', nextNode: 'B1'},
         ],
-        answer: 'ANSWER',
-        inputType: 'images',
-        backgroundImgSrc: '../assets/Background/windows_98_background.png',
+        inputType: 'buttons',
+        backgroundImgSrc: '../assets/Background/title-screen.jpg',
       },
       {
         id: 'A1',
         content: `
-            <b>U hoeft voor deze leerling geen ontheffing aan te vragen.</b>
-            <br><br>
-            Een leerling moet het voortgezet speciaal onderwijs verlaten aan het einde van het schooljaar waarin
-            de leerling 20 jaar is geworden. De leerling mag dus het schooljaar afmaken.
+            Begin opnieuw.
           `,
         paths: null,
+        backgroundImgSrc: '../assets/Background/blue-screen-of-death.png',
       },
       {
         id: 'B1',
-        content: `Is er sprake van een voortgezet verblijf op de school?`,
+        content: `Het is ochtend en Vogelbekdier de Vries wordt wakker. Hij voelt zich niet helemaal goed. Waarmee voelt hij zich beter?`,
 
         paths: [
-          {label: 'Ja', nextNode: 'C1'},
-          {label: 'Nee', nextNode: 'B2'},
+          {label: '', nextNode: 'C1', imgSrc: '../assets/Images/coffee.png', customClass: 'coffee'},
+          {label: '', nextNode: 'B2', imgSrc: '../assets/Images/wodka.png', customClass: 'wodka'},
         ],
+        inputType: 'images',
+        backgroundImgSrc: '../assets/Background/net_wakker.png',
+      },
+      {
+        id: 'B2',
+        content:`De wodka is niet goed gevallen. Wil je alsnog een kopje koffie proberen?`,
+        paths: [
+          {label: 'Ja', nextNode: 'C1' },
+          {label: 'Nee', nextNode: 'A0'},
+        ],
+        inputType: 'buttons',
+        backgroundImgSrc: '../assets/Background/kots.png'
+      },
+      {
+        id: 'C1',
+        content: `hier komt iets`,
+        paths: [
+          {label: 'iets', nextNode: 'C2'},
+          {label: 'iets', nextNode: 'C3'},
+        ],
+        inputType: 'buttons',
+        backgroundImgSrc: '../assets/Background/kots.png'
       }
 
     ],
   }
 
   @ViewChild(DecisionTreeComponent) decisionTree: DecisionTreeComponent
-
 
 
   constructor() {

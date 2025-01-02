@@ -2,27 +2,81 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   min-height: 100vh;
-  background-size: contain;
+  margin-bottom: 2rem;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .question-container {
-  text-align: center;
-  color: white;
+  background-color: rgba(0, 0, 0);
+  border: 0.1rem solid white;
+  text-align: left;
+  width: 70%;
   font-family: MonkeyIsland, "Courier New", monospace;
-  font-size: 4rem;
+  font-size: 2rem;
+  white-space: initial; /* Zorg dat nieuwe regels goed weergegeven worden */
+  line-height: 1.5;
+  color: #00ff00; /* Groen, zoals in oude terminals */
 }
 
+.node-content {
+  padding: 3rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*button {*/
+/*  border: none;*/
+/*  background-color: black;*/
+/*  padding: 1rem;*/
+/*  border: 0.1rem solid white;*/
+/*  font-family: MonkeyIsland, "Courier New", monospace;*/
+/*  font-size: 1rem;*/
+/*  color: #00ff00;*/
+/*  width: 10rem;*/
+/*}*/
+
+/*button:hover {*/
+/*  background-color: white;*/
+/*  color: black;*/
+/*}*/
+
 .image-options img {
-  width: 100px; /* Pas aan naar gewenste grootte */
-  height: auto;
+  /*width: 100px; !* Pas aan naar gewenste grootte *!*/
+  /*height: auto;*/
   margin: 10px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+
 }
 
 .image-options img:hover {
-  transform: scale(1.1);
+  transform: scale(1.4);
+}
+
+
+/*button.back {*/
+/*  position: absolute;*/
+/*  z-index: 100;*/
+/*  top: 1rem;*/
+/*  left: 1rem;*/
+/*}*/
+
+button {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.coffee {
+  width: 300px;
+}
+
+.wodka {
+  height: 300px;
 }
