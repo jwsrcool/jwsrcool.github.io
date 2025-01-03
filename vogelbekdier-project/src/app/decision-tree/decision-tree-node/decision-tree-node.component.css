@@ -16,7 +16,7 @@
   text-align: left;
   width: 70%;
   font-family: MonkeyIsland, "Courier New", monospace;
-  font-size: 2rem;
+  font-size: 1rem;
   white-space: initial; /* Zorg dat nieuwe regels goed weergegeven worden */
   line-height: 1.5;
   color: #00ff00; /* Groen, zoals in oude terminals */
