@@ -24,7 +24,7 @@ export class DecisionTreeNodeComponent implements OnInit {
 
   protected displayedContent: string = ''; // Huidige weergegeven tekst
   private fullContent: string = ''; // Volledige tekst van de vraag
-  private typingInterval: number = 50; // Interval in milliseconden tussen letters
+  private typingInterval: number = 25; // Interval in milliseconden tussen letters
 
   constructor() { }
 

@@ -20,7 +20,7 @@ button {
   font-family: MonkeyIsland, "Courier New", monospace;
   font-size: 1rem;
   color: #00ff00;
-  width: 10rem;
+  min-width: 10rem;
 }
 
 button:hover {
