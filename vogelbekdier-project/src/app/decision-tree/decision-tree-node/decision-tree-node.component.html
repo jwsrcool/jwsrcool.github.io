@@ -5,20 +5,7 @@
 
   </div>
   <div class="choices">
-    <ng-container *ngIf="node.inputType === 'images'; else buttons">
-      <div class="image-options">
-        <img
-          *ngFor="let path of node.paths; let first = first"
-          [src]="path.imgSrc"
-          [alt]="path.label"
-          [class.primary-button]="first"
-          [class]="path.customClass"
-          (click)="emitAnswerClicked(path)"
-        />
-      </div>
-    </ng-container>
 
-    <ng-template #buttons>
       <div class="button-container">
         <button
           *ngFor="let path of node.paths; let first = first"
@@ -30,7 +17,7 @@
           {{ path.label }}
         </button>
       </div>
-    </ng-template>
+
   </div>
 
 </div>

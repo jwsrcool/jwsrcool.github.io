@@ -16,7 +16,6 @@ export interface IDecisionTreeNode {
   content: string;
   paths: IDecisionTreePath[] | null;
   answer?: string;
-  inputType?: 'buttons' | 'images';
   backgroundImgSrc?: string; // Voor beeldvullende achtergrond
 }
 

@@ -27,7 +27,6 @@ export class TemporaryComponent {
           {label: 'Nee', nextNode: 'A1'},
           {label: 'Ja', nextNode: 'B1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/title-screen.jpg',
       },
       {
@@ -43,10 +42,9 @@ export class TemporaryComponent {
         content: `Het is ochtend en Vogelbekdier de Vries wordt wakker. Hij voelt zich niet helemaal goed. Waarmee voelt hij zich beter?`,
 
         paths: [
-          {label: '', nextNode: 'C1', imgSrc: '../assets/Images/coffee.png', customClass: 'coffee'},
-          {label: '', nextNode: 'B2', imgSrc: '../assets/Images/wodka.png', customClass: 'wodka'},
+          {label: 'Tijd voor koffie', nextNode: 'C1'},
+          {label: 'Alleen iets  met alcohol helpt', nextNode: 'B2'}
         ],
-        inputType: 'images',
         backgroundImgSrc: '../assets/Background/net_wakker.png',
       },
       {
@@ -56,7 +54,6 @@ export class TemporaryComponent {
           {label: 'Ja', nextNode: 'C1'},
           {label: 'Nee', nextNode: 'A0'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/kots.png'
       },
       {
@@ -69,7 +66,6 @@ export class TemporaryComponent {
           {label: 'Ga terug naar bed', nextNode: 'B1'},
           {label: 'Ga op zoek naar antwoorden buiten', nextNode: 'E1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/C1-coffe.png'
       },
       {
@@ -80,31 +76,28 @@ export class TemporaryComponent {
           {label: 'Ga richting de camping', nextNode: 'E2'},
           {label: 'Ga richting de bioscoop', nextNode: 'E3'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/E1.png'
       },
       {
         id: 'E2',
         content: `Wanneer Vogelbekdier de Vries het dorp verlaat en de weg naar de camping inslaat, valt zijn blik op een vreemd verkeersbord.
-        Het bord lijkt bijna... levendig. Terwijl VDV dichterbij komt, hoort hij een stem klagen.`,
+        Het bord lijkt bijna... levendig. Terwijl hij dichterbij komt, hoort hij een stem klagen.`,
         paths: [
           {label: 'Bekijk het verkeersbord', nextNode: 'E2a'},
           {label: 'Loop naar camping', nextNode: 'F1'},
           {label: 'Loop naar huis', nextNode: 'E1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/E2verkeersbord.png'
       },
       {
         id: 'E2a',
-        content: 'Ach, kijk nou eens wie we hier hebben... Een wandelend verhaal zonder einde. ' +
-          'Wat brengt jou hierheen, onafgemaakte ziel?',
+        content: 'Verkeersbord: "Ach, kijk nou eens wie we hier hebben... Een wandelend verhaal zonder einde. ' +
+          'Wat brengt jou hierheen, onafgemaakte ziel?"',
         paths: [
           {label: 'Ik zoek antwoorden. Jij klinkt alsof je meer weet.', nextNode: 'E2b'},
           {label: 'Ga naar de camping', nextNode: 'F1'},
           {label: 'Loop naar huis', nextNode: 'E1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/e2a.png'
       },
       {
@@ -116,7 +109,6 @@ export class TemporaryComponent {
           {label: 'Maar je hebt toch een doel gediend? Dat is toch waardevol?', nextNode: 'E2c'},
           {label: 'Wil je liever onafgemaakt zijn, zoals ik?', nextNode: 'E2d'}
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/e2a.png'
       },
       {
@@ -127,7 +119,6 @@ export class TemporaryComponent {
           {label: 'Ga naar de camping', nextNode: 'F1'},
           {label: 'Loop naar huis', nextNode: 'E1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/e2a.png'
       },
       {
@@ -138,29 +129,28 @@ export class TemporaryComponent {
           {label: 'Misschien is onafgemaakt zijn inderdaad beter...', nextNode: 'E2e'},
           {label: 'Misschien moet je jouw nut zien als jouw kunst.', nextNode: 'E2f'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/e2a.png'
       },
       {
         id: 'E2e',
         content: 'Misschien. Maar het voelt wel eenzaam om nooit écht gezien te worden als meer dan een middel. ' +
-          'Jij hebt nog de kans om betekenis te vinden. Ga, zoek verder. Misschien vind je wat ik niet heb gevonden.',
+          'Jij hebt nog de kans om betekenis te vinden. Ga, zoek verder. Misschien vind je wat ik niet heb gevonden. ' +
+          'Als ik een tip mag geven: ga eens langs het restaurant. ',
         paths: [
           {label: 'Ga naar de camping', nextNode: 'F1'},
           {label: 'Loop naar huis', nextNode: 'E1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/e2a.png'
       },
       {
         id: 'E2f',
         content: 'Mijn nut als kunst zien... Dat is iets wat ik nog nooit heb geprobeerd. ' +
-          'Interessante gedachte. Misschien zit er toch nog iets van schoonheid in het praktisch zijn. Dank je, wandelaar.',
+          'Interessante gedachte. Misschien zit er toch nog iets van schoonheid in het praktisch zijn. Dank je, wandelaar.' +
+          'Hier is nog een tip voor je reis: als je het echt niet meer ziet zitten, ga op zoek naar een restaurant.',
         paths: [
           {label: 'Ga naar de camping', nextNode: 'F1'},
           {label: 'Loop naar huis', nextNode: 'E1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/e2a.png'
       },
       {
@@ -172,31 +162,29 @@ export class TemporaryComponent {
           {label: 'Loop naar bioscoop', nextNode: 'H1'},
           {label: 'Loop naar huis', nextNode: 'E1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/kardinaalvogel.webp'
       },
       {
         id: 'E3a',
         content: `Je kijkt naar mij alsof ik een meesterwerk ben. Maar ik ben slechts de eerste van een onvoltooide serie.
-        Mijn schepper begon vol vertrouwen, vol vuur. Maar toen kwam de twijfel. De tweede is ook nog gemaakt, maar daarna kwam de twijfel.
-        Dus bleven we onvoltooid. De anderen bestaan slechts in een idee, nooit in werkelijkheid.`,
+        Mijn schepper begon vol vertrouwen, vol vuur. De tweede is ook nog gemaakt, misschien vliegt hij hier ergens rond,
+        maar daarna kwam de twijfel. Dus bleven we onvoltooid. De anderen bestaan slechts in een idee, nooit in werkelijkheid.`,
         paths: [
           {label: 'Maar jij bent toch af? Je bent prachtig!', nextNode: 'E3b'},
           {label: 'Dus je leeft met de angst van je schepper?', nextNode: 'E3c'},
 
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/kardinaalvogel.webp'
 
       },
       {
         id: 'E3b',
-        content: `Prachtig? Misschien, maar compleet? Nee. Zonder de anderen ben ik slechts een enkel lied in een onafgemaakte symfonie.`,
+        content: `Prachtig? Misschien, maar compleet? Nee. Zonder de anderen ben ik slechts een enkel lied in een onafgemaakte symfonie.
+        Ik heb me er maar bij neergelegd. Als ik het echt niet meer zie zitten, ga ik naar het restaurant. Zou jij misschien ook moeten doen...`,
         paths: [
           {label: 'Loop naar bioscoop', nextNode: 'H1'},
           {label: 'Loop naar huis', nextNode: 'E1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/kardinaalvogel.webp'
 
       },
@@ -208,35 +196,33 @@ export class TemporaryComponent {
           {label: 'Misschien is onafgemaakt zijn juist je kracht.', nextNode: 'E3d'},
           {label: 'Wat als de schepper het nooit bedoeld heeft om af te maken?', nextNode: 'E3e'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/kardinaalvogel.webp'
       },
       {
         id: 'E3d',
         content: `Hmm, onafgemaakt als kracht… Misschien ben ik inderdaad niet minder door mijn onvolledigheid, maar juist
-        meer. Zonder begin of einde kan ik altijd opnieuw geïnterpreteerd worden. Interessante gedachte, wandelaar.`,
+        meer. Zonder begin of einde kan ik altijd opnieuw geïnterpreteerd worden. Interessante gedachte, wandelaar. Als dank voor dit inzicht
+        geef ik je een tip: ga eens kijken bij het restaurant.`,
         paths: [
           {label: 'Loop naar bioscoop', nextNode: 'H1'},
           {label: 'Loop naar huis', nextNode: 'E1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/kardinaalvogel.webp'
       },
       {
         id: 'E3e',
         content: `Een bewuste keuze om niet af te maken? Dat zou van grote wijsheid getuigen. Maar... ik weet niet of
         mijn schepper zo wijs was. Misschien wilde hij voltooien, maar kon hij niet. Net zoals jij iets zoekt,
-        maar het misschien nooit vindt.`,
+        maar het misschien nooit vindt. Mijn tip: ga eens zoeken bij het restaurant.`,
         paths: [
           {label: 'Loop naar bioscoop', nextNode: 'H1'},
           {label: 'Loop naar huis', nextNode: 'E1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/kardinaalvogel.webp'
       },
       {
         id: 'F1',
-        content: `Een verlaten camping, met uitgerafelde vlaggetjes aan een slap touw en lege tentplekken. Het gras
+        content: `Een verlaten camping, met gerafelde vlaggetjes aan een slap touw en lege tentplekken. Het gras
         groeit wild, alsof het terrein het kamperen al lang vergeten is. Vogelbekdier de Vries vraagt zich af wie hier
         ooit heeft gelachen, gezongen of sterren heeft gekeken. Hij ziet geen mens of dier, alleen paden die verder leiden.
         Misschien is rust vinden net zoiets als verdwalen: je weet het pas als je stopt met zoeken.`,
@@ -245,7 +231,6 @@ export class TemporaryComponent {
           {label: 'Ga richting school', nextNode: 'F2'},
           {label: 'Ga richting kerk', nextNode: 'F3'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/F1.png'
       },
       {
@@ -257,7 +242,6 @@ export class TemporaryComponent {
           {label: 'Loop naar school', nextNode: 'G1'},
           {label: 'Loop naar camping', nextNode: 'F1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/cats.png'
       },
       {
@@ -270,17 +254,15 @@ export class TemporaryComponent {
           {label: 'Maar jullie zijn toch nog steeds hier?', nextNode: 'F2b'},
           {label: 'Misschien is er nog hoop om jullie verhaal te vertellen?', nextNode: 'F2c'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/cats.png'
       },
       {
         id: 'F2b',
         content: `Ja, maar wat betekent dat, hier zijn zonder een verhaal om in te leven?`,
         paths: [
-          {label: 'Maar jullie zijn toch nog steeds hier?', nextNode: 'F2b'},
-          {label: 'Misschien is er nog hoop om jullie verhaal te vertellen?', nextNode: 'F2c'},
+          {label: 'Loop naar school', nextNode: 'G1'},
+          {label: 'Loop naar camping', nextNode: 'F1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/cats.png'
       },
       {
@@ -290,7 +272,6 @@ export class TemporaryComponent {
           {label: 'Loop naar school', nextNode: 'G1'},
           {label: 'Loop naar camping', nextNode: 'F1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/cats.png'
       },
       {
@@ -302,7 +283,6 @@ export class TemporaryComponent {
           {label: 'Loop naar kerk', nextNode: 'I1'},
           {label: 'Loop naar camping', nextNode: 'F1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/hell.png'
       },
       {
@@ -314,7 +294,6 @@ export class TemporaryComponent {
           {label: 'Ja knikken, glimlachen en naar de kerk lopen', nextNode: 'I1'},
           {label: 'Ren hard weg richting camping', nextNode: 'F1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/hell.png'
       },
       {
@@ -327,7 +306,6 @@ export class TemporaryComponent {
           {label: 'Wat als jullie nooit afkomen en betekenis krijgen?', nextNode: 'F3d'},
 
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/hell.png'
       },
       {
@@ -339,7 +317,6 @@ export class TemporaryComponent {
           {label: 'Loop naar camping', nextNode: 'F1'},
 
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/hell.png'
       },
       {
@@ -352,7 +329,6 @@ export class TemporaryComponent {
           {label: 'Loop naar kerk', nextNode: 'I1'},
           {label: 'Loop naar camping', nextNode: 'F1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/hell.png'
       },
       {
@@ -364,30 +340,58 @@ export class TemporaryComponent {
           {label: 'Ga richting camping', nextNode: 'F2'},
           {label: 'Ga richting haven', nextNode: 'G2'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/G1.png'
       },
       {
         id: 'G2',
-        content: `muziekorkest`,
+        content: `Vogelbekdier de Vries loopt verder en ziet een groepje muzikanten. Ze spelen zacht op hun instrumenten, maar kijken een beetje verloren.
+        <br>
+        Muzikant 2: "Waarom spelen we eigenlijk? Niemand luistert.`,
         paths: [
-          {label: 'Ga in gesprek', nextNode: 'G2a'},
-          {label: 'Loop naar haven', nextNode: 'J1'},
-          {label: 'Loop naar school', nextNode: 'G1'},
+          {label: 'Loop door', nextNode: 'G2a'}
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/music.png'
       },
       {
         id: 'G2a',
-        content: `dansers`,
+        content: `Hij komt een groep danseressen tegen. Ze bewegen op verschillende ritmes, hun dansen komen niet overeen.
+        Elke danseres lijkt haar eigen tempo en stijl te hebben, en het is een chaos van bewegingen zonder samenhang.`,
         paths: [
-          {label: 'Ga in gesprek', nextNode: 'G2a'},
-          {label: 'Loop naar haven', nextNode: 'J1'},
-          {label: 'Loop naar school', nextNode: 'G1'},
+          {label: 'Geef advies', nextNode: 'G2b'},
+          {label: 'Lach ze uit', nextNode: 'G2c'},
+
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/dance.png'
+      },
+      {
+        id: 'G2b',
+        content: `VdV: "Hé, ik heb net muzikanten gezien die allemaal afzonderlijk spelen. Ze vroegen zich af waarom, maar
+        misschien komt het doordat ze niet samen spelen. Misschien zouden jullie hen eens moeten ontmoeten.
+        Als jullie samen dansen op hun muziek, zou het wel eens kunnen werken."`,
+        paths: [
+          {label: 'Wijs ze de weg naar de muzikanten', nextNode: 'G2d'},
+          {label: 'Ga naar de haven', nextNode: 'J1'},
+        ],
+        backgroundImgSrc: '../assets/Background/dance.png'
+      },
+      {
+        id: 'G2c',
+        content: `VdV: "Zeg, je hoeft niet te dansen he? Als er geen muziek is kun je ook gewoon stilstaan en
+        iets nuttigs doen met je leven."`,
+        paths: [
+          {label: 'Ren snel weg richting haven', nextNode: 'J1'},
+        ],
+        backgroundImgSrc: '../assets/Background/dance.png'
+      },
+      {
+        id: 'G2d',
+        content: `De Vries leidt hen naar de muzikanten. Als ze daar aankomen, begint de muziek weer te spelen,
+        en langzaam, maar zeker, beginnen de danseressen zich aan te passen aan de ritmes van de muzikanten.
+        De dans en muziek vullen elkaar aan, en het geheel komt samen tot een prachtig moment van harmonie. De Vries kijkt tevreden toe.`,
+        paths: [
+          {label: 'Ga naar de haven', nextNode: 'J1'},
+        ],
+        backgroundImgSrc: '../assets/Background/dance_music.png'
       },
       {
         id: 'H1',
@@ -399,7 +403,6 @@ export class TemporaryComponent {
           {label: 'Ga richting supermarkt', nextNode: 'H3'},
           {label: 'Ga richting kerk', nextNode: 'H2'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/H1.png'
       },
       {
@@ -410,7 +413,6 @@ export class TemporaryComponent {
           {label: 'Loop naar kerk', nextNode: 'I1'},
           {label: 'Loop naar bioscoop', nextNode: 'H1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/generic4.png'
       },
       {
@@ -421,7 +423,6 @@ export class TemporaryComponent {
           {label: 'Loop naar supermarkt', nextNode: 'K1'},
           {label: 'Loop naar bioscoop', nextNode: 'H1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/generic5.png'
       },
       {
@@ -434,7 +435,6 @@ export class TemporaryComponent {
           {label: 'Ga richting ziekenhuis', nextNode: 'I3'},
           {label: 'Ga richting bioscoop', nextNode: 'H2'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/I1.png'
       },
       {
@@ -445,7 +445,6 @@ export class TemporaryComponent {
           {label: 'Loop naar haven', nextNode: 'J1'},
           {label: 'Loop naar kerk', nextNode: 'I1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/generic.png'
       },
       {
@@ -456,7 +455,6 @@ export class TemporaryComponent {
           {label: 'Loop naar ziekenhuis', nextNode: 'L1'},
           {label: 'Loop naar kerk', nextNode: 'I1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/generic1.png'
       },
       {
@@ -468,19 +466,95 @@ export class TemporaryComponent {
           {label: 'Ga richting restaurant', nextNode: 'J2'},
           {label: 'Ga richting kerk', nextNode: 'I2'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/J1.png'
       },
       {
         id: 'J2',
-        content: `Een karakter met conversatie. Voor nu leidt dit door naar volgende kruispunt`,
+        content: `Vogelbekdier de Vries loopt langs de kust. Het geruis van de branding overstemt zijn gedachten. Plotseling ziet
+        hij iets donkers vlak onder het wateroppervlak. Een tentakel van een octopus kruipt de rotsen op bij zijn voeten.`,
         paths: [
           {label: 'Ga in gesprek', nextNode: 'J2a'},
           {label: 'Loop naar restaurant', nextNode: 'M1'},
           {label: 'Loop naar haven', nextNode: 'J1'},
         ],
-        inputType: 'buttons',
-        backgroundImgSrc: '../assets/Background/generic1.png'
+        backgroundImgSrc: '../assets/Background/octopus.png'
+      },
+      {
+        id: 'J2a',
+        content: `De octopus lijkt uit de wateroppervlakte te rijzen, zijn tentakels grillig verspreid als een complexe
+        afdruk op het papier. Hoort hij bij een groter verhaal, of is hij een kunstwerk op zichzelf?`,
+        paths: [
+          {label: 'Ben jij een monster?', nextNode: 'J2b'},
+          {label: 'Ben jij een kunstwerk?', nextNode: 'J2c'}
+
+        ],
+        backgroundImgSrc: '../assets/Background/octopus.png'
+      },
+      {
+        id: 'J2b',
+        content: `Monster? Misschien ben ik de schaduw van iets dat nooit compleet was. Of ben ik gewoon een afdruk,
+        een moment gevangen in tijd, zonder een groter verhaal? Ik weet het niet. Ik twijfel voortdurend.
+        Zou ik een bedreiging moeten zijn, of gewoon een stilte in de zee?`,
+        paths: [
+          {label: 'Ben je het niet eens met wat je bent?', nextNode: 'J2d'},
+          {label: 'Misschien ben je precies wat je hoort te zijn', nextNode: 'J2e'}
+
+        ],
+        backgroundImgSrc: '../assets/Background/octopus.png'
+      },
+      {
+        id: 'J2c',
+        content: `Wat ik ben, hangt af van het perspectief, denk ik. Als ik kijk naar mijn tentakels, lijkt het alsof
+        ik vastzit in een patroon, maar ben ik dan slechts een onderdeel van iets groter? Of ben ik gewoon een
+        toevallige schets in het onmetelijke blauw?`,
+        paths: [
+          {label: 'Waarom twijfel je zo?', nextNode: 'J2f'},
+          {label: 'Kun je je identiteit wel echt vinden in wat je ziet?', nextNode: 'J2g'}
+
+        ],
+        backgroundImgSrc: '../assets/Background/octopus.png'
+      },
+      {
+        id: 'J2d',
+        content: `Misschien is het idee van een monster mijn manier om me te verstoppen voor de angst om niet genoeg te
+        zijn. Maar misschien is het juist die onzekerheid die me compleet maakt. Een onvoltooide symfonie, die nooit af is,
+        maar altijd gehoord zal worden`,
+        paths: [
+          {label: 'Ik vind dit echt een heel vaag gesprek', nextNode: 'M1'}
+
+        ],
+        backgroundImgSrc: '../assets/Background/octopus.png'
+      },
+      {
+        id: 'J2e',
+        content: `De zee is groot, en ik ben slechts een druppel in haar uitgestrektheid. Misschien is het mijn rol om
+        deel uit te maken van een groter verhaal. Misschien ben ik een symbool voor alles wat onvoltooid is,
+        een stille getuige van wat had kunnen zijn`,
+        paths: [
+          {label: 'Ik vind dit echt een heel vaag gesprek', nextNode: 'M1'}
+
+        ],
+        backgroundImgSrc: '../assets/Background/octopus.png'
+      },
+      {
+        id: 'J2f',
+        content: `Misschien is het mijn aard om te twijfelen, als ik er niet ben, ben ik een mythe. Als ik er wel ben,
+        ben ik slechts een afdruk in het zand. De vragen blijven: Ben ik het monster dat mijn schepper misschien voor
+        ogen had? Of ben ik slechts een visioen van wat zou kunnen zijn?`,
+        paths: [
+          {label: 'Ik vind dit echt een heel vaag gesprek', nextNode: 'M1'}
+
+        ],
+        backgroundImgSrc: '../assets/Background/octopus.png'
+      },
+      {
+        id: 'J2g',
+        content: `Zou mijn onvolledigheid een kracht kunnen zijn? Ik ben niet vastgelegd in één verhaal, ik ben vloeibaar,
+        veranderlijk, net als de oceaan zelf. Misschien is mijn onafgemaakte vorm juist mijn enige echte kracht.`,
+        paths: [
+          {label: 'Ik vind dit echt een heel vaag gesprek', nextNode: 'M1'}
+        ],
+        backgroundImgSrc: '../assets/Background/octopus.png'
       },
       {
         id: 'K1',
@@ -490,7 +564,6 @@ export class TemporaryComponent {
           {label: 'Ga richting bioscoop', nextNode: 'H3'},
           {label: 'Ga richting ziekenhuis', nextNode: 'K2'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/K1.png'
       },
       {
@@ -501,7 +574,6 @@ export class TemporaryComponent {
           {label: 'Loop naar ziekenhuis', nextNode: 'L1'},
           {label: 'Loop naar supermarkt', nextNode: 'K1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/generic3.png'
       },
       {
@@ -513,7 +585,6 @@ export class TemporaryComponent {
           {label: 'Ga richting restaurant', nextNode: 'L2'},
           {label: 'Ga richting supermarkt', nextNode: 'K2'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/L1.png'
       },
       {
@@ -524,7 +595,6 @@ export class TemporaryComponent {
           {label: 'Loop naar restaurant', nextNode: 'M1'},
           {label: 'Loop naar ziekenhuis', nextNode: 'L1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/generic4.png'
       },
       {
@@ -538,7 +608,6 @@ export class TemporaryComponent {
           {label: 'Ga richting haven', nextNode: 'J2'},
           {label: 'Drink verdriet weg', nextNode: 'B1'},
         ],
-        inputType: 'buttons',
         backgroundImgSrc: '../assets/Background/M1.png'
       }
     ],
