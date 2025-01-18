@@ -76,7 +76,7 @@ export class TemporaryComponent {
           {label: 'Ga richting de camping', nextNode: 'E2'},
           {label: 'Ga richting de bioscoop', nextNode: 'E3'},
         ],
-        backgroundImgSrc: '../assets/Background/E1.png'
+        backgroundImgSrc: '../assets/Background/generic4.png'
       },
       {
         id: 'E2',
@@ -407,23 +407,198 @@ export class TemporaryComponent {
       },
       {
         id: 'H2',
-        content: `Een karakter met conversatie. Voor nu leidt dit door naar volgende kruispunt`,
+        content: `Vogelbekdier de Vries vervolgt zijn weg, als hij plots uit zijn ooghoeken een huis met open deur ziet.
+        "Misschien moet ik even kijken of het daar wel allemaal goed gaat," denkt hij.`,
         paths: [
-          {label: 'Ga in gesprek', nextNode: 'H2a'},
+          {label: 'Ga het huis binnen', nextNode: 'H2a'},
           {label: 'Loop naar kerk', nextNode: 'I1'},
           {label: 'Loop naar bioscoop', nextNode: 'H1'},
         ],
-        backgroundImgSrc: '../assets/Background/generic4.png'
+        backgroundImgSrc: '../assets/Background/E1.png'
+      },
+      {
+        id: 'H2a',
+        content: `Vogelbekdier De Vries: "Wat doe je in de koffie?"
+          <br>
+          Muis: "Wat doet de koffie in mij? Elk bad is een kans om te absorberen, te reflecteren. De suiker lost op, net als onze zorgen."`,
+        paths: [
+          {label: 'De keuken is geen badhuis.', nextNode: 'H2b'},
+          {label: 'Ze zullen je wegjagen als ze je zien.', nextNode: 'H2c'},
+        ],
+        backgroundImgSrc: '../assets/Background/muis.png'
+      },
+      {
+        id: 'H2b',
+        content: '"De keuken is geen badhuis? Wat is dat voor bekrompen gedachtegoed? Logica is een ketting. ' +
+          'Ik ben vrij! De keuken is mijn speelplaats, en koffie is mijn oceaan. ' +
+          'Ik heb geen servies nodig dat mij vertelt wat ik moet doen."',
+        paths: [
+          {label: 'Maar is het niet plakkerig?', nextNode: 'H2d'},
+        ],
+        backgroundImgSrc: '../assets/Background/muis.png'
+      },
+      {
+        id: 'H2c',
+        content: '"En wie zijn ‘ze’? Zijn zij de meesters van deze plek? Of slechts voorbijgangers in mijn wereld van ' +
+          'koffiedamp en vrijheid? Misschien moet ik hen leren hoe je echt leeft."',
+        paths: [
+          {label: '"Ze" zijn de eigenaren van dit huis', nextNode: 'H2e'},
+          {label: 'Volgens mij zijn de dampen je naar het hoofd gestegen', nextNode: 'H2f'},
+        ],
+        backgroundImgSrc: '../assets/Background/muis.png'
+      },
+      {
+        id: 'H2d',
+        content: 'Plakkerigheid is slechts een omhelzing van de materie! Waarom zou ik bang zijn om te kleven, ' +
+          'als ik daardoor één kan worden met mijn omgeving?',
+        paths: [
+          {label: 'Volgens mij zijn de dampen je naar het hoofd gestegen', nextNode: 'H2f'},
+        ],
+        backgroundImgSrc: '../assets/Background/muis.png'
+      },
+      {
+        id: 'H2e',
+        content: '"Ja ja, dat snap ik heus wel. Misschien moeten die mensen dan maar leren dat eten delen de hoogste vorm van gastvrijheid is. ' +
+          'Een muis in de koffie is slechts een nieuw aroma!"',
+        paths: [
+          {label: 'Loop naar kerk', nextNode: 'I1'},
+          {label: 'Loop naar bioscoop', nextNode: 'H1'},
+        ],
+        backgroundImgSrc: '../assets/Background/muis.png'
+      },
+      {
+        id: 'H2f',
+        content: '"Misschien wel, maar wat is een hoofd zonder dromen? Laat me stijgen, dalen, oplossen in het aroma... Wie weet wat voor meesterwerk ik word als ik verdamp!"',
+        paths: [
+          {label: 'Loop naar kerk', nextNode: 'I1'},
+          {label: 'Loop naar bioscoop', nextNode: 'H1'},
+        ],
+        backgroundImgSrc: '../assets/Background/muis.png'
       },
       {
         id: 'H3',
-        content: `Een karakter met conversatie. Voor nu leidt dit door naar volgende kruispunt`,
+        content: `Vogelbekdier de Vries is behoorlijk overprikkeld door alle gesprekken. Hij weet nog steeds wie hij is en wat hij wil,
+        maar hij weet wel dat hij alles even moet laten bezinken voor hij weer zo'n gesprek aan kan. Ah, daar is net een museum, dat
+        is precies zo'n plek waar hij even rustig zou kunnen nadenken.`,
         paths: [
-          {label: 'Ga in gesprek', nextNode: 'H3a'},
+          {label: 'Ga het museum in', nextNode: 'H3a'},
           {label: 'Loop naar supermarkt', nextNode: 'K1'},
           {label: 'Loop naar bioscoop', nextNode: 'H1'},
         ],
         backgroundImgSrc: '../assets/Background/generic5.png'
+      },
+      {
+        id: 'H3a',
+        content: `Hij zakt neer op een bankje en wil net zijn gedachten gaan ordenen, als hij een stem hoort:
+        <br>
+        "Ah, een bewonderaar! Hoe heerlijk dat je hier bent, sterveling, om te aanschouwen wat perfectie werkelijk betekent. Weet je wel wie ik ben?"`,
+        paths: [
+          {label: 'Nou, eigenlijk niet.', nextNode: 'H3b'},
+          {label: 'Ik denk dat ik het wel kan raden', nextNode: 'H3c'},
+        ],
+        backgroundImgSrc: '../assets/Background/vogel2.png'
+      },
+      {
+        id: 'H3b',
+        content: `"Niet?! Ongelooflijk. Ik ben de tweede, het pièce de résistance van een visionair genie.
+        Kijk naar deze lijnen, deze kleuren, deze balans. Geen enkel schepsel buiten deze muren kan zich met mij meten."`,
+        paths: [
+          {label: 'Je ziet er inderdaad indrukwekkend uit.', nextNode: 'H3d'},
+          {label: 'Maar je hangt hier wel alleen...', nextNode: 'H3e'},
+        ],
+        backgroundImgSrc: '../assets/Background/vogel2.png'
+      },
+      {
+        id: 'H3c',
+        content: `Zo! Scherp van je. Ik neem aan dat je mijn collega, de kardinaalvogel, al tegen bent gekomen? Hij zit ergens
+        treurig op een tak, terwijl mijn aanwezigheid vult deze ruimte vult. Zelfs in stilte straal ik grootsheid uit.
+        Ik ben vereeuwigd, terwijl hij slechts vluchtig bestaat.`,
+        paths: [
+          {label: 'Je hebt gelijk, een museum is het hoogst haalbare', nextNode: 'H3d'},
+          {label: 'Alleen zijn straalt toch niets uit?', nextNode: 'H3e'},
+        ],
+        backgroundImgSrc: '../assets/Background/vogel2.png'
+      },
+      {
+        id: 'H3d',
+        content: `"Precies! Het museum is de Olympus van de kunstwereld. Hier wordt niet gewoeld in de modder van het bestaan.
+        Hier is eeuwige rust, waardering en perfectie. Een plek waar enkel de besten blijven. Jij begrijpt het."`,
+        paths: [
+          {label: 'Maar als niemand kijkt, wat is dan het nut?', nextNode: 'H3f'},
+          {label: 'Je bent inderdaad een meesterwerk.', nextNode: 'H3h'},
+        ],
+        backgroundImgSrc: '../assets/Background/vogel2.png'
+      },
+      {
+        id: 'H3e',
+        content: `"Alleen? Maar natuurlijk, alleen! Dat is de prijs van perfectie. Ik ben niet zoals die... kardinaalvogel
+        die zichzelf te kijk zet in de natuur. Wie heeft daar nu oog voor? Hier, in dit museum, ben ik verheven boven alledaagsheid."`,
+        paths: [
+          {label: 'Maar je wordt niet bekeken. Wat is daar verhevens aan?', nextNode: 'H3f'},
+          {label: 'Misschien is het toch mooier om te worden bewonderd door voorbijgangers', nextNode: 'H3f'},
+        ],
+        backgroundImgSrc: '../assets/Background/vogel2.png'
+      },
+      {
+        id: 'H3f',
+        content: `Vogelbekdier de Vries kijkt om zich heen naar de lege zaal.
+        "Ik zie geen bewonderaars. Geen voorbijgangers die blijven staan. Zelfs geen gids die uitlegt wie je bent.
+        Is perfectie in stilte wel zoveel waard?"
+        <br>
+        De vogel in het schilderij valt even stil.
+        <br>
+        "Dat... dat kan toch niet alles zijn. Wat weet jij ervan, sterveling? Jij bent slechts een wandelaar in de schaduw."`,
+        paths: [
+          {label: 'Misschien wel, maar zelfs schaduwen worden gezien.', nextNode: 'H3i'},
+          {label: 'Ik weet dat de kardinaal in ieder geval wordt gezien.', nextNode: 'H3j'},
+        ],
+        backgroundImgSrc: '../assets/Background/vogel2.png'
+      },
+      {
+        id: 'H3g',
+        content: `"De kardinaal? Die dwaas op zijn tak? Maar... hij leeft. Hij leeft..."
+        <br>
+        De stem van de vogel wordt zachter, alsof hij nadenkt. Vogelbekdier de Vries draait zich om en loopt de zaal uit.
+        In de stilte blijft de vogel achter, omgeven door perfectie, maar zonder publiek.`,
+        paths: [
+          {label: 'Loop naar supermarkt', nextNode: 'K1'},
+          {label: 'Loop naar bioscoop', nextNode: 'H1'},
+        ],
+        backgroundImgSrc: '../assets/Background/vogel2.png'
+      },
+      {
+        id: 'H3h',
+        content: `"Ah, dat weet ik natuurlijk, maar het is fijn om het te horen. Een meesterwerk, ja.
+        <br>
+        De zaal blijft stil, op een zacht zoemen van de verlichting na. Vogelbekdier de Vries loopt langzaam richting de uitgang.
+        <br>
+        "Maar...," zegt de vogel zachtjes, alsof hij tegen zichzelf spreekt, "wat is perfectie waard als niemand het ziet?
+        Als mijn pracht verborgen blijft, als zelfs jij straks weer vertrekt?"`,
+        paths: [
+          {label: 'Loop naar supermarkt', nextNode: 'K1'},
+          {label: 'Loop naar bioscoop', nextNode: 'H1'},
+        ],
+        backgroundImgSrc: '../assets/Background/vogel2.png'
+      },
+      {
+        id: 'H3i',
+        content: `"Schaduwen... zijn dat niet slechts de toevallige restanten van licht? Hoe kunnen ze waarde hebben?
+        Maar... misschien hebben ze meer publiek dan ik."`,
+        paths: [
+          {label: 'Loop naar supermarkt', nextNode: 'K1'},
+          {label: 'Loop naar bioscoop', nextNode: 'H1'},
+        ],
+        backgroundImgSrc: '../assets/Background/vogel2.png'
+      },
+      {
+        id: 'H3j',
+        content: `"De kardinaal... altijd de kardinaal! Maar wat heeft hij? Slechts wat kleur en beweging. Geen perfectie!
+        Hoe kan hij worden gezien terwijl ik... onopgemerkt blijf?"`,
+        paths: [
+          {label: 'Loop naar supermarkt', nextNode: 'K1'},
+          {label: 'Loop naar bioscoop', nextNode: 'H1'},
+        ],
+        backgroundImgSrc: '../assets/Background/vogel2.png'
       },
       {
         id: 'I1',
@@ -439,23 +614,110 @@ export class TemporaryComponent {
       },
       {
         id: 'I2',
-        content: `Een karakter met conversatie. Voor nu leidt dit door naar volgende kruispunt`,
+        content: `"Wat dacht je? Dat ik hier gewoon een kopje ben? Het lijkt wel een stilleven, maar geloof me,
+        ik ben meer dan dat. Welkom in het circus, waar zelfs ik geen normale rol speel."`,
         paths: [
-          {label: 'Ga in gesprek', nextNode: 'I2a'},
+          {label: 'Wat verwacht je dat ik daarmee doe?', nextNode: 'I2a'},
           {label: 'Loop naar haven', nextNode: 'J1'},
           {label: 'Loop naar kerk', nextNode: 'I1'},
         ],
-        backgroundImgSrc: '../assets/Background/generic.png'
+        backgroundImgSrc: '../assets/Background/circus.png'
+      },
+      {
+        id: 'I2a',
+        content: `"Ik had me gewoon willen voegen bij de stillevens van de wereld, rustig en onopvallend, met niets meer
+        dan een kopje op een schotel. Maar nee, blijkbaar is het niet genoeg om gewoon te zijn wat ik ben. Nu ben ik hier,
+        in dit circus van zintuigen, met mijn oren en ogen die ik nooit vroeg, als een grap die niemand serieus neemt.
+        En toch, hier ben ik, vastgeketend aan deze absurde voorstelling."`,
+        paths: [
+          {label: 'Dus je hebt de oren, maar waar zijn je hersens?', nextNode: 'I2b'},
+          {label: 'Doe je ook een act in dit circus?', nextNode: 'I2c'},
+        ],
+        backgroundImgSrc: '../assets/Background/circus.png'
+      },
+      {
+        id: 'I2b',
+        content: `"Hersens? Ach, ik ben geen filosoof. Ik ben gewoon een stilleven, een object. Jij zoekt naar betekenis
+        waar die er niet is. Misschien moet je leren om gewoon te kijken."`,
+        paths: [
+          {label: 'Heb je advies voor me?', nextNode: 'I2d'},
+        ],
+        backgroundImgSrc: '../assets/Background/circus.png'
+      },
+      {
+        id: 'I2c',
+        content: `"Oh, ik ben geen acrobaat, maar een kunstenaar van het absurde. In dit circus speel ik de rol van de
+        betwiste realiteit, dat wat jij niet kunt begrijpen."`,
+        paths: [
+          {label: 'Heb je een advies voor me?', nextNode: 'I2d'},
+        ],
+        backgroundImgSrc: '../assets/Background/circus.png'
+      },
+      {
+        id: 'I2d',
+        content: `"Als je wilt weten wat er ontbreekt, kijk dan naar wat je hebt. We hebben allemaal iets van waarde,
+        zelfs al is het maar een stukje van de werkelijkheid. Jij zoekt te veel, steeds verder, zonder te stoppen. Het
+        leven is geen zoektocht naar de perfecte betekenis, het is juist de kunst om het te omarmen zonder alles te begrijpen.
+         Zoek niet naar antwoorden in de chaos... soms is het juist de chaos die de mooiste antwoorden geeft."`,
+        paths: [
+          {label: 'Loop naar haven', nextNode: 'J1'},
+          {label: 'Loop naar kerk', nextNode: 'I1'},
+        ],
+        backgroundImgSrc: '../assets/Background/circus.png'
       },
       {
         id: 'I3',
-        content: `Een karakter met conversatie. Voor nu leidt dit door naar volgende kruispunt`,
+        content: `Plots hoort Vogelbekdier de Vries het geluid van een centrifugerende wasmachine. Hij loopt erop af.`,
         paths: [
-          {label: 'Ga in gesprek', nextNode: 'I3a'},
+          {label: 'Wat doe jij hier?', nextNode: 'I3a'},
           {label: 'Loop naar ziekenhuis', nextNode: 'L1'},
           {label: 'Loop naar kerk', nextNode: 'I1'},
         ],
-        backgroundImgSrc: '../assets/Background/generic1.png'
+        backgroundImgSrc: '../assets/Background/cat.png'
+      },
+      {
+        id: 'I3a',
+        content: `"Ik weet het nog goed. Toen ze me in dit pak stopten, dacht ik dat ik een bijzonder doel had. Ik moest
+        gewoon mezelf zijn... maar blijkbaar is mijn enige bestemming het dragen van dit Omo-logo. Ze wilden dat ik
+        reclame maakte, maar nooit heeft iemand me een cent betaald. Ben ik dan niet meer dan een middel om iets te
+        verkopen, een marionet zonder draad?"`,
+        paths: [
+          {label: 'En je hebt altijd je hele leven gewacht op die betaling?', nextNode: 'I3b'},
+          {label: 'Misschien moet je gewoon accepteren dat je niets waard bent in dit systeem.', nextNode: 'I3c'},
+        ],
+        backgroundImgSrc: '../assets/Background/cat.png'
+      },
+      {
+        id: 'I3b',
+        content: `"Wachten? Nee, ik wachtte niet. Ik hoopte. Hoop is een vreemd iets, weet je? Het maakt je levend en
+        houdt je gevangen tegelijk. En nu? Nu weet ik niet eens meer waarop ik hoopte. Misschien dat iemand me zou
+        zien... maar hoe vaak kijken mensen echt naar een kat in een Omo-pak?"`,
+        paths: [
+          {label: 'Dus je hebt al die tijd vergeefs gehoopt?', nextNode: 'I3d'},
+          {label: 'Waarom blijf je wachten op iets dat niet komt?', nextNode: 'I3d'},
+        ],
+        backgroundImgSrc: '../assets/Background/cat.png'
+      },
+      {
+        id: 'I3c',
+        content: `"Niets waard? Misschien heb je gelijk. Maar als ik niets waard ben, waarom bestaat dit pak dan? Waarom
+        ben ik hier, in dit landschap met een wasmachine die niemand ooit gebruikt? Zelfs niets heeft toch een soort...
+        betekenis? Zelfs een leeg doosje Omo is ooit gekocht, ooit gekozen. Waarom zou ik dan minder zijn dan dat?"`,
+        paths: [
+          {label: 'Misschien kun je zelf betekenis vinden.', nextNode: 'I3d'},
+          {label: 'Dus je denkt dat alles betekenis heeft?', nextNode: 'I3d'},
+        ],
+        backgroundImgSrc: '../assets/Background/cat.png'
+      },
+      {
+        id: 'I3d',
+        content: `"Misschien heb je gelijk. Betekenis komt niet van buitenaf. Misschien moet ik mezelf zien als meer
+        dan een reclamedrager. Jij ook trouwens. Wat als ons doel niet gegeven is, maar gemaakt wordt?"`,
+        paths: [
+          {label: 'Loop naar ziekenhuis', nextNode: 'L1'},
+          {label: 'Loop naar kerk', nextNode: 'I1'},
+        ],
+        backgroundImgSrc: '../assets/Background/cat.png'
       },
       {
         id: 'J1',
@@ -558,7 +820,7 @@ export class TemporaryComponent {
       },
       {
         id: 'K1',
-        content: `De verlaten supermarkt is vreemd stil. VDV loopt langs lege schappen die ooit vol lagen met alles wat
+        content: `De verlaten supermarkt is vreemd stil. Vogelbekdier de Vries loopt langs lege schappen die ooit vol lagen met alles wat
         mensen nodig hadden, of dachten nodig te hebben. Hij vraagt zich af of er ooit genoeg is, of altijd meer.`,
         paths: [
           {label: 'Ga richting bioscoop', nextNode: 'H3'},
@@ -568,48 +830,169 @@ export class TemporaryComponent {
       },
       {
         id: 'K2',
-        content: `Een karakter met conversatie. Voor nu leidt dit door naar volgende kruispunt`,
+        content: `Vogelbekdier de Vries struikelt, en tuimelt naar beneden, een grot in. Plots ziet hij allemaal ogen oplichten.
+        <br>
+        Uit de duisternis klinkt een stem: "Ik ben niet zoals jij. Ik ben van de nacht, van het donker, waar geen regels bestaan. Het is mijn domein,
+        en ik ben de koningin. Wat weet jij van vrijheid, van het verlaten van de gebaande paden?"`,
         paths: [
-          {label: 'Ga in gesprek', nextNode: 'K2a'},
+          {label: 'Ik geloof niet in vrijheid', nextNode: 'K2a'},
           {label: 'Loop naar ziekenhuis', nextNode: 'L1'},
           {label: 'Loop naar supermarkt', nextNode: 'K1'},
         ],
-        backgroundImgSrc: '../assets/Background/generic3.png'
+        backgroundImgSrc: '../assets/Background/heks.png'
+      },
+      {
+        id: 'K2a',
+        content: `"Jij gelooft niet in vrijheid? Wat geloof je dan wel? Ben je zo verstrikt in de regels die je jezelf
+        hebt opgelegd, dat je denkt dat er geen ruimte is voor iets anders? Of ben je gewoon bang om je eigen kettingen te breken?"`,
+        paths: [
+          {label: 'Misschien zijn we allemaal gevangen, maar in verschillende kooitjes.', nextNode: 'K2b'},
+          {label: 'Wat betekent vrijheid als je niet weet wat je ermee moet doen?', nextNode: 'K2c'},
+
+        ],
+        backgroundImgSrc: '../assets/Background/heks.png'
+      },
+      {
+        id: 'K2b',
+        content: `"Kooitjes? Noem jij dit een kooi? Dit is vrijheid in haar puurste vorm, ongehinderd door de normen
+        van de wereld. Jij hebt jezelf misschien gevangen, maar dat is geen excuus om te denken dat iedereen hetzelfde lot deelt."`,
+        paths: [
+          {label: 'Loop naar ziekenhuis', nextNode: 'L1'},
+          {label: 'Loop naar supermarkt', nextNode: 'K1'},
+
+        ],
+        backgroundImgSrc: '../assets/Background/heks.png'
+      },
+      {
+        id: 'K2c',
+        content: `"Vrijheid is alles wat je niet kunt begrenzen. Het is niet iets dat je met woorden kunt omschrijven,
+        maar iets dat je moet voelen. Jij hebt geen behoefte aan vrijheid, je verlangt naar zekerheid."`,
+        paths: [
+          {label: 'Loop naar ziekenhuis', nextNode: 'L1'},
+          {label: 'Loop naar supermarkt', nextNode: 'K1'},
+
+        ],
+        backgroundImgSrc: '../assets/Background/heks.png'
       },
       {
         id: 'L1',
-        content: `De gevel van het ziekenhuis is verweerd, alsof het zelf behoefte heeft aan genezing. VDV voelt de
+        content: `De gevel van het ziekenhuis is verweerd, alsof het zelf behoefte heeft aan genezing. Vogelbekdier de Vries voelt de
         kille lucht en denkt aan wat het betekent om te helen: is het genoeg om de pijn te verlichten, of is het pas
         klaar als de wonden onzichtbaar zijn?`,
         paths: [
           {label: 'Ga richting restaurant', nextNode: 'L2'},
+          {label: 'Ga richting kerk', nextNode: 'I3'},
           {label: 'Ga richting supermarkt', nextNode: 'K2'},
         ],
         backgroundImgSrc: '../assets/Background/L1.png'
       },
       {
         id: 'L2',
-        content: `Een karakter met conversatie. Voor nu leidt dit door naar volgende kruispunt`,
+        content: `Vogelbekdier de Vries: "Wat een sfeer... Je weet zeker precies hoe ik me voel. Alleen in de schaduwen,
+        gevangen in een eeuwige nacht."`,
         paths: [
-          {label: 'Ga in gesprek', nextNode: 'L2a'},
+          {label: 'Jij vindt zeker dat ik me aanstel.', nextNode: 'L2a'},
           {label: 'Loop naar restaurant', nextNode: 'M1'},
           {label: 'Loop naar ziekenhuis', nextNode: 'L1'},
         ],
-        backgroundImgSrc: '../assets/Background/generic4.png'
+        backgroundImgSrc: '../assets/Background/halloween.png'
       },
       {
-        id: 'M1',
-        content: `M1: Restaurant. De ramen van het restaurant weerspiegelen VDV’s gezicht. Binnen zijn de tafels gedekt,
-        maar er is niemand om te serveren of te eten. Een plek voor ontmoeting, waar nooit iemand ontmoette.
-        Vogelbekdier de Vries vraagt zich af of stilte soms ook een smaak heeft. Hier ook hint naar cadeau geven. En hem laveloos
-        laten drinken, waarna hij weer thuis wakker wordt.`,
+        id: 'L2a',
+        content: `Vogelbekdier de Vries: "Je denkt zeker dat ik me aanstel, hè? Dat alles altijd maar zo zwaar moet zijn.
+        Nou, sorry dat ik het leven niet zo licht opneem als een boom bij maanlicht"`,
         paths: [
+          {label: 'Die boom heeft vast een beter leven.', nextNode: 'L2b'},
+          {label: 'Ik wil het helemaal anders gaan doen.', nextNode: 'L2c'},
+        ],
+        backgroundImgSrc: '../assets/Background/halloween.png'
+      },
+      {
+        id: 'L2b',
+        content: `Vogelbekdier de Vries: "Ik snap het al. Jij hebt natuurlijk ook je problemen. Altijd maar daar staan,
+        niets kunnen doen. Niet kunnen praten"`,
+        paths: [
+          {label: 'Dat is pas een eenzaam bestaan.', nextNode: 'L2d'},
+          {label: 'Misschien ben je gewoon perfect in je stilte.', nextNode: 'L2d'},
+        ],
+        backgroundImgSrc: '../assets/Background/halloween.png'
+      },
+      {
+        id: 'L2c',
+        content: `Vogelbekdier de Vries: "Ik weet het al: je vindt dat ik het zelf moet uitzoeken. Heel behulpzaam. Dank je wel" `,
+        paths: [
+          {label: 'Loop naar restaurant', nextNode: 'M1'},
+          {label: 'Loop naar ziekenhuis', nextNode: 'L1'},
+        ],
+        backgroundImgSrc: '../assets/Background/halloween.png'
+      },
+      {
+        id: 'L2d',
+        content: `Vogelbekdier de Vries: "Ik weet het al: je vindt dat ik mezelf niet zo serieus moet nemen.
+        Nou, jij neemt jezelf anders ook veel te serieus met al dat betekenisvolle gezwijg!" `,
+        paths: [
+          {label: 'Loop naar restaurant', nextNode: 'M1'},
+          {label: 'Loop naar ziekenhuis', nextNode: 'L1'},
+        ],
+        backgroundImgSrc: '../assets/Background/halloween.png'
+      },
+
+      {
+        id: 'M1',
+        content: `De ramen van het restaurant weerspiegelen het gezicht van Vogelbekdier de Vries. Binnen zijn de tafels gedekt.
+         Vogelbekdier de Vries vraagt zich af of stilte soms ook een smaak heeft. Hij voelt dat hij hier antwoorden gaat krijgen.`,
+        paths: [
+          {label: 'Ga het restaurant binnen', nextNode: 'M1a'},
           {label: 'Ga richting ziekenhuis', nextNode: 'L2'},
           {label: 'Ga richting haven', nextNode: 'J2'},
-          {label: 'Drink verdriet weg', nextNode: 'B1'},
         ],
         backgroundImgSrc: '../assets/Background/M1.png'
-      }
+      },
+      {
+        id: 'M1a',
+        content: `De Vries stapt het restaurant binnen. De lucht is dik van stilte en verwachting. Aan iedere tafel
+        zitten vogelbekdieren. Elk paar ogen in de ruimte richt zich op hem. Sommigen kijken nieuwsgierig, anderen met
+        een vleugje herkenning, alsof ze iets begrijpen dat hij nog niet helemaal vat. De Vries voelt hoe de gesprekken
+         die hij onderweg heeft gevoerd, in zijn hoofd blijven weerklinken.
+         <br>
+         VdV: "Misschien maakt het niet uit welke weg ik kies. Misschien maakt het alleen uit dát ik kies. Dat ik iets doe."`,
+        paths: [
+          {label: 'Ja, ik ga aan de slag. Er is werk te doen.', nextNode: 'M1b'},
+          {label: 'Ik wil alleen maar drinken tot ik alle rare gesprekken weer kwijt ben', nextNode: 'M1c'},
+          {label: 'Ik ga naar buiten. Er is meer te zien.', nextNode: 'M1'},
+        ],
+        backgroundImgSrc: '../assets/Background/restaurant.png'
+      },
+      {
+        id: 'M1b',
+        content: `De ober knikt goedkeurend en brengt een kort briefje op een zilveren dienblad. Op het briefje staat in sierlijke letters:
+        <br>
+        "Voor de schepper van Vogelbekdier De Vries.
+        <br>
+        Een klein begin voor iets groots.
+        <br>
+        Zoek me in een blauwe kast,
+        <br>
+        waar ideeën in daden veranderen."
+        <br>
+        De Vries draait het briefje om, maar verder staat er niets. Hij kijkt naar het pakketje en weet dat het niet hier
+        in het restaurant is. Buiten wacht een wereld vol mogelijkheden, maar nu ook een nieuwe bestemming. Een plek om te zoeken.`,
+        paths: [
+          {label: 'Dit is het einde van dit spel. Wil je naar buiten?', nextNode: 'M1'},
+          {label: 'Of opnieuw beginnen?', nextNode: 'A0'},
+        ],
+        backgroundImgSrc: '../assets/Background/restaurant.png'
+      },
+      {
+        id: 'M1c',
+        content: `Weet je het zeker?`,
+        paths: [
+          {label: 'Nee, bij nader inzien ga ik liever aan de slag. Er is werk te doen.', nextNode: 'M1b'},
+          {label: 'Ja, ik weet het zeker. Ik wil mijn verwarring en verdriet verdrinken.', nextNode: 'B1'},
+        ],
+        backgroundImgSrc: '../assets/Background/restaurant.png'
+      },
+
     ],
   }
 
